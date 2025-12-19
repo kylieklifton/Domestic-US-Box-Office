@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Best of the 2025 Domestic Box Office</title>
-    <style>
-        body {
-            margin: 0;
-            background-color: rgb(228, 217, 236);
-        }
-        /* Make the page 700px wide, centered */
-        .container {
-            width: 700px;
-            margin: 4em auto;
-        }
-        /* Use a nice font */
-        body {
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 3em;
-            margin: 2em 0;
-        }
-
-        .graphic {
-            max-width: 500px;
-            margin: 2em auto;
-        }
-
-        #footer {
-            text-align: center;
-            padding: 4em;
-            background-color: #f0f1ff;
-            border-top: solid white 5px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <title>Best of the 2025 Domestic Box Office</title>
+  <style>
+    body { margin: 0; background-color: rgb(228, 217, 236); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    .container { width: 700px; margin: 4em auto; }
+    h1 { text-align: center; font-size: 3em; margin: 2em 0; }
+    .graphic { max-width: 500px; margin: 2em auto; }
+    #footer { text-align: center; padding: 4em; background-color: #f0f1ff; border-top: solid white 5px; }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🌥️ The bad air website 🏭</h1>
-        <h3>Major cities of the world, ranked by their air quality</h3>
-        <p>The chart below updates everyday. The domestic box office is published by Box Office Mojo. <a href="https://www.boxofficemojo.com/date/?ref_=bo_nb_wey_secondarytab"></a>.</p>
-        <div class="graphic">
-          <iframe title="Biggest Single-Day Domestic Box Office Gross of 2025" aria-label="Bar Chart" id="datawrapper-chart-jT8pT" src="https://datawrapper.dwcdn.net/jT8pT/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="14841" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
-        </div>
+  <div class="container">
+<h1>🎬 Best of the 2025 Domestic Box Office</h1>
+<h3>Largest single-day domestic box office grosses of the year</h3>
+
+    <p>
+      The chart below updates every day. The domestic box office is published by
+      <a href="https://www.boxofficemojo.com/date/?ref_=bo_nb_wey_secondarytab">Box Office Mojo</a>.
+    </p>
+
+    <div class="graphic">
+      <iframe
+        title="Biggest Single-Day Domestic Box Office Gross of 2025"
+        aria-label="Bar Chart"
+        id="datawrapper-chart-jT8pT"
+        src="https://datawrapper.dwcdn.net/jT8pT/1/"
+        scrolling="no"
+        frameborder="0"
+        style="width: 0; min-width: 100% !important; border: none;"
+        height="14841"
+        data-external="1"></iframe>
+
+      <script>
+        window.addEventListener("message", function (e) {
+          if (e.data["datawrapper-height"]) {
+            var iframes = document.querySelectorAll("iframe");
+            for (var chartId in e.data["datawrapper-height"]) {
+              for (var i = 0; i < iframes.length; i++) {
+                if (iframes[i].contentWindow === e.source) {
+                  iframes[i].style.height = e.data["datawrapper-height"][chartId] + "px";
+                }
+              }
+            }
+          }
+        });
+      </script>
     </div>
-    <div id="footer">
-        <p>This website was made for final project submission</p>
-    </div>
+  </div>
+
+  <div id="footer">
+    <p>This website was made for final project submission</p>
+  </div>
+</body>
 </html>
